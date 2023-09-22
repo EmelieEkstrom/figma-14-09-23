@@ -1,0 +1,115 @@
+body {
+    background-color: black;
+}
+
+.header {
+
+    background-color: rgba(61, 224, 126, 1);
+    width: 1440px;
+    height: 608px;
+}
+
+
+.navigation, .nav-icon {
+
+    position: absolute;
+    align-self: flex-start;
+    align-content: flex-start;
+    
+}
+
+.ninjahead-ninja .ninja { 
+
+    align-content: center;
+    justify-content: center;
+    
+    
+}
+
+h1 {
+    
+    display: flex;
+    align-self: center;
+    width: 863px;
+    height: 96px;
+    top: 224px;
+    left: 288px;
+    align-self: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 102px;
+    font-weight: 700;
+    line-height: 120px;
+    letter-spacing: 0em;
+    text-align: center;
+
+
+}
+
+h2, p {
+    color: white;
+}
+
+div-ninjahead {
+    
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+   
+
+}
+
+nav-icon {
+    display: flex;
+    position: absolute;
+    align-self: flex-start;
+
+}
+
+main-posters-contens {
+
+    display: flex;
+    justify-content: space-around; 
+    align-content: space-around;
+    background-color: black;
+    width: 1440px;
+    height: 3840px;
+    top: -450px;
+    left: -720px;
+
+}
+
+button {
+
+    background-color: red;
+    color: rgba(255, 255, 255, 1);;
+    font-style: Fira-Sans; 
+    width: Hug (173px);
+    height: Hug (49px);
+    padding: 16px, 24px, 16px, 24px;
+    border-radius: 4px;
+    gap: 10px;
+
+}
+
+div-footer  {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.242);
+    color: white;
+    width: 1438px;
+    height: 320px;
+    top: 3520px;   
+
+}
+
+h3 {
+    font-family: Fira Sans;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
+
+}
