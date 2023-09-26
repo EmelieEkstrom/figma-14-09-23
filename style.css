@@ -1,12 +1,11 @@
-body {
-    background-color: black;
-}
 
-.header {
+header {
 
     background-color: rgba(61, 224, 126, 1);
     width: 1440px;
     height: 608px;
+    margin: 0px;
+    align-self: center;
 }
 
 
@@ -18,31 +17,22 @@ body {
     
 }
 
-.ninjahead-ninja .ninja { 
-
-    align-content: center;
-    justify-content: center;
-    
-    
-}
-
 h1 {
-    
+
     display: flex;
-    align-self: center;
+    position: absolute;
     width: 863px;
     height: 96px;
     top: 224px;
     left: 288px;
-    align-self: center;
-    justify-content: center;
     font-family: Roboto;
     font-size: 102px;
     font-weight: 700;
     line-height: 120px;
     letter-spacing: 0em;
     text-align: center;
-
+    justify-content: center;
+    align-self: center;
 
 }
 
@@ -50,13 +40,13 @@ h2, p {
     color: white;
 }
 
-div-ninjahead {
+img-ninjahead {
     
     display: flex;
-    align-content: center;
+    align-items: center;
     justify-content: center;
-    margin: 0;
-   
+    width: 201px; 
+    height: 301px; 
 
 }
 
@@ -67,18 +57,82 @@ nav-icon {
 
 }
 
-main-posters-contens {
-
+main {
+    background-color: black;
     display: flex;
-    justify-content: space-around; 
-    align-content: space-around;
+    justify-content: flex-start;  /* Center horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: space-between;
+    flex-direction: row; (repeat:1,2,3)
     background-color: black;
     width: 1440px;
     height: 3840px;
-    top: -450px;
-    left: -720px;
 
 }
+
+box-1, box-2, box-3 {
+    display: flex; 
+    flex-direction: column; 
+    flex-grow: 1; 1,2,3 (repeat;)
+    justify-content: flex-start;
+    align-content: flex-start;
+    justify-items: space-between;
+}
+
+box-2 {
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1;
+
+}
+
+box-3 {
+    display: flex; 
+    flex-direction: column;
+    flex-grow: 1; 
+
+}
+
+box-4 {
+    display: flex; 
+    flex-direction: column;
+}
+
+box-5 {
+    display: flex; 
+    flex-direction: column;
+}
+
+box-6 {
+    display: flex; 
+    flex-direction: column;
+}
+
+
+box-7 {
+    display: flex; 
+    flex-direction: column;
+}
+
+box-8 {
+    display: flex; 
+    flex-direction: column;
+}
+
+box-9 {
+    display: flex; 
+    flex-direction: column;
+
+}
+
+div-box-large {
+    display: flex;
+    flex-direction: column;
+    position: center;
+    justify-content: center;
+    align-items: flex-end;
+}
+
 
 button {
 
@@ -92,15 +146,16 @@ button {
     gap: 10px;
 
 }
+
 div-footer  {
+    
     display: flex;
     justify-content: center;
-    justify-content: flex-end;
+    justify-content: bottom;
     background-color: rgba(255, 255, 255, 0.242);
     color: white;
     width: 1438px;
-    height: 320px;
-    top: 3520px;   
+    height: 320px;  
 
 }
 
