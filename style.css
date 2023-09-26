@@ -92,9 +92,10 @@ button {
     gap: 10px;
 
 }
-
 div-footer  {
     display: flex;
+    justify-content: center;
+    justify-content: flex-end;
     background-color: rgba(255, 255, 255, 0.242);
     color: white;
     width: 1438px;
