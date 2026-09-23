@@ -1,171 +1,463 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: "Fira Sans", sans-serif;
+}
+
+
+/* =========================
+   HEADER
+   ========================= */
 
 header {
-
     background-color: rgba(61, 224, 126, 1);
+
     width: 1440px;
-    height: 608px;
-    margin: 0px;
-    align-self: center;
+    height: 508px;
+
+    margin: 0 auto;
 }
 
 
-.navigation, .nav-icon {
+/* =========================
+   NAVIGATION
+   ========================= */
 
-    position: absolute;
-    align-self: flex-start;
-    align-content: flex-start;
-    
-}
-
-h1 {
+.navigation {
+    width: 100%;
+    height: 100%;
 
     display: flex;
-    position: absolute;
-    width: 863px;
-    height: 96px;
-    top: 224px;
-    left: 288px;
-    font-family: Roboto;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* =========================
+   NAVICON
+   ========================= */
+
+.navigation img:first-child {
+    width: 40px;
+    height: 40px;
+
+    align-self: flex-start;
+
+    margin: 30px;
+}
+
+
+/* =========================
+   TITLE
+   ========================= */
+
+h1 {
+    margin: 30px 0 0 0;
+
+    font-family: "Roboto", sans-serif;
     font-size: 102px;
     font-weight: 700;
     line-height: 120px;
-    letter-spacing: 0em;
+
     text-align: center;
-    justify-content: center;
-    align-self: center;
 
+    color: black;
 }
 
-h2, p {
-    color: white;
+
+/* =========================
+   NINJA
+   ========================= */
+
+.navigation .ninjahead {
+    width: 201px;
+    height: 301px;
+
+    margin-top: 140px;
 }
 
-img-ninjahead {
-    
+
+/* =========================
+   TITLE
+   ========================= */
+
+h1 {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 201px; 
-    height: 301px; 
+    justify-self: flex-start;
+    margin-top: 30px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 102px;
+    font-weight: 700;
+    line-height: 120px;
+
+    text-align: center;
+
+    color: black;
+}
+
+
+/* =========================
+   NINJA
+   ========================= */
+
+.navigation .ninjahead {
+    width: 201px;
+    height: 301px;
 
 }
 
-nav-icon {
-    display: flex;
-    position: absolute;
-    align-self: flex-start;
 
-}
+/* =========================
+   MAIN
+   ========================= */
 
 main {
     background-color: black;
-    display: flex;
-    justify-content: flex-start;  /* Center horizontally */
-    align-items: center; /* Center vertically */
-    justify-content: space-between;
-    flex-direction: row; (repeat:1,2,3)
-    background-color: black;
+
     width: 1440px;
-    height: 3840px;
+    min-height: 1540px;
 
-}
+    margin: 0 auto;
 
-box-1, box-2, box-3 {
-    display: flex; 
-    flex-direction: column; 
-    flex-grow: 1; 1,2,3 (repeat;)
-    justify-content: flex-start;
-    align-content: flex-start;
-    justify-items: space-between;
-}
-
-box-2 {
-    display: flex; 
-    flex-direction: column;
-    flex-grow: 1;
-
-}
-
-box-3 {
-    display: flex; 
-    flex-direction: column;
-    flex-grow: 1; 
-
-}
-
-box-4 {
-    display: flex; 
-    flex-direction: column;
-}
-
-box-5 {
-    display: flex; 
-    flex-direction: column;
-}
-
-box-6 {
-    display: flex; 
-    flex-direction: column;
+    padding: 60px 80px;
 }
 
 
-box-7 {
-    display: flex; 
-    flex-direction: column;
+/* =========================
+   POSTER CONTAINER
+   ========================= */
+
+.box-container {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    column-gap: 40px;
+    row-gap: 60px;
+
+    width: 100%;
 }
 
-box-8 {
-    display: flex; 
-    flex-direction: column;
-}
 
-box-9 {
-    display: flex; 
-    flex-direction: column;
+/* =========================
+   POSTER BOXES
+   ========================= */
 
-}
-
-div-box-large {
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6,
+.box-7,
+.box-8,
+.box-9 {
     display: flex;
     flex-direction: column;
-    position: center;
-    justify-content: center;
-    align-items: flex-end;
+
+    align-items: flex-start;
+
+    width: 100%;
 }
 
+
+/* =========================
+   POSTER IMAGES
+   ========================= */
+
+.box-1 img,
+.box-2 img,
+.box-3 img,
+.box-4 img,
+.box-5 img,
+.box-6 img,
+.box-7 img,
+.box-8 img,
+.box-9 img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================
+   POSTER HEADINGS
+   ========================= */
+
+h2 {
+    margin: 20px 0 10px 0;
+
+    color: white;
+
+    font-family: "Fira Sans", sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+
+/* =========================
+   TEXT
+   ========================= */
+
+p {
+    margin: 0 0 20px 0;
+
+    color: white;
+
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+
+/* =========================
+   BUTTON
+   ========================= */
 
 button {
-
     background-color: red;
-    color: rgba(255, 255, 255, 1);;
-    font-style: Fira-Sans; 
-    width: Hug (173px);
-    height: Hug (49px);
-    padding: 16px, 24px, 16px, 24px;
-    border-radius: 4px;
-    gap: 10px;
-
-}
-
-div-footer  {
-    
-    display: flex;
-    justify-content: center;
-    justify-content: bottom;
-    background-color: rgba(255, 255, 255, 0.242);
     color: white;
-    width: 1438px;
-    height: 320px;  
 
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    padding: 16px 24px;
+
+    border: none;
+    border-radius: 4px;
+
+    cursor: pointer;
 }
+
+
+/* =========================
+   LARGE POSTERS
+   ========================= */
+
+.content-large {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 40px;
+
+    margin-top: 80px;
+}
+
+
+.large-poster {
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+
+.large-poster img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.footer {
+    display: flex;
+
+    justify-content: space-between;
+    align-items: flex-start;
+
+    background-color: rgba(255, 255, 255, 0.242);
+
+    width: 1440px;
+    min-height: 320px;
+
+    margin: 0 auto;
+
+    padding: 60px 80px;
+}
+
+
+/* =========================
+   FOOTER SECTIONS
+   ========================= */
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   FOOTER HEADINGS
+   ========================= */
 
 h3 {
-    font-family: Fira Sans;
+    margin: 0 0 20px 0;
+
     color: white;
+
+    font-family: "Fira Sans", sans-serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 48px;
-    letter-spacing: 0em;
-    text-align: left;
 
+    letter-spacing: 0;
+}
+
+
+/* =========================
+   FOOTER LINKS
+   ========================= */
+
+.footer-section a {
+    color: white;
+
+    font-family: "Fira Sans", sans-serif;
+    font-size: 18px;
+    line-height: 30px;
+
+    text-decoration: none;
+}
+
+
+.footer-section a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   FOOTER ADDRESS
+   ========================= */
+
+.footer-section p {
+    color: white;
+
+    font-size: 18px;
+    line-height: 28px;
+}
+
+
+/* =========================
+   SOCIAL MEDIA
+   ========================= */
+
+.social-media {
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 1000px) {
+
+    header,
+    main,
+    .footer {
+        width: 100%;
+    }
+
+    h1 {
+        width: 100%;
+
+        font-size: 72px;
+        line-height: 84px;
+    }
+
+    main {
+        padding: 40px;
+    }
+
+    .box-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-large {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        padding: 40px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+    header {
+        width: 100%;
+        height: 500px;
+    }
+
+    h1 {
+        top: 120px;
+
+        width: 100%;
+
+        font-size: 48px;
+        line-height: 56px;
+    }
+
+    .navigation .ninjahead {
+        width: 150px;
+        height: auto;
+    }
+
+    main {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .box-container {
+        grid-template-columns: 1fr;
+    }
+
+    .content-large {
+        grid-template-columns: 1fr;
+    }
+
+    .footer {
+        width: 100%;
+
+        flex-direction: column;
+
+        gap: 40px;
+
+        padding: 40px 20px;
+    }
+
+    h3 {
+        font-size: 32px;
+        line-height: 40px;
+    }
 }
